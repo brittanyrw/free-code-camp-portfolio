@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-  	<meta charset="UTF-8">
-  	<meta name="description" content="Brittany Walker is an aspiring web developer based in Washington, DC.">
-	<title>Brittany Walker | Web Developer</title>
-
-	<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
-	<nav>
-		<ul>
-			<li>HOME</li>
-			<li>ABOUT</li>
-			<li>WORK</li>
-			<li>CONTACT</li>
-		</ul>
-	</nav>
-	<main>
-		<section class="home">
-			<h1>HELLO.</h1>
-			<h2>Brittany Walker</h1>
-			<h3>Web Developer</h1>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Brittany Walker is an aspiring web developer based in Washington, DC.">
+		<title>Brittany Walker | Web Developer</title>
+		<script src="https://use.fontawesome.com/e656f4498e.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Arvo:700|Poppins:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body>
+	  <header>
+	  	<div class="name">
+	    	<h1>Brittany Walker</h1>
+	    	<h3>web development and design</h3>
+	    </div>
+	    <nav>
+	    	<ul>
+	    		<li><a href="#about">about.</a></li>
+	    		<li><a href="#work">work.</a></li>
+	    		<li><a href="#contact">contact.</a></li>	    			    			    		
+	    	</ul>
+	    </nav>
+	  </header>
+	  <section class="about" id="about">
+	    <h1>about.</h1>
+	    <div class="about-text">
+	      <p>I am an aspiring Web Developer located in the Washington, DC area. Currently my skills include HTML, CSS, and Javascript. I am participating in various coding challenges this year, including the 100 Days Of Code Challenge. </p>
+	      
+	      <p class="highlight">For daily logs please visit my <a href="https://github.com/brittanyrw" class="about-link">Github</a>.</p>
+	      <p class="highlight">For weekly recaps please visit my <a href="https://medium.com/@brittanyrw" class="about-link">Medium</a> blog.</p>
+	    </div>
+	  </section>
+	  <section class="work" id="work">
+	    <h1>work.</h1>
+	    <div class="work-item">
+	      <img src="imgs/HamiltonQuiz.jpg">
+	      <div class="work-text">
+	        <p>A JavaScript quiz based on Hamilton the Musical.</p>
+	        <a href="https://brittanyrw.github.io/hamilton-quiz-app/">demo</a>
+	      </div>
+	    </div>
+	    <div class="work-item">
+	      <img src="imgs/CSSimages.jpg">
+	      <div class="work-text">
+	        <p>Various CSS images created based on prompts from a Daily CSS Image Challenge. </p>
+	        <a href="https://codepen.io/trekkiegirl/">demo</a>
+	      </div>
+	    </div>
+	    <div class="work-item">
+	      <img src="imgs/FCCTributePage.jpg">
+	      <div class="work-text">
+	        <p>A responsive tribute page to Leonard Nimoy.</p>
+	        <a href="https://brittanyrw.github.io/free-code-camp-tribute-page-v2/">demo</a>
+	      </div>
+	    </div>
+	  </section>
+	  <section class="contact" id="contact">
+		    <h1>contact.</h1>
+		    <div class="contact-text">
+			    <div class="social">
+			    	<a href="https://twitter.com/musicalwebdev?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+					<a href="https://medium.com/@brittanyrw"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+					<a href="https://github.com/brittanyrw"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
+			    </div>
+		    </div>
 		</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+	</body>
 
-		<section class="about">
-			<h1>ABOUT.</h1>
-			<div class="about-image"></div>
-			<div class="about-text"></div>
-		</section>
-
-		<section class="work">
-			<h1>WORK.</h1>
-			<div class="work-image"></div>
-			<div class="work-text"></div>
-		</section>
-
-		<section class="contact">
-			<h1>CONTACT.</h1>
-			<div class="contact-images">
-				<img src="" alt="Twitter Logo">
-				<img src="" alt="Medium Logo">
-				<img src="" alt="GitHub Logo">
-			</div>
-			<div class="contact-text"></div>
-			<div class="contact-form"></div>			
-		</section>							
-	</main>
-</body>
 </html>

@@ -1,0 +1,205 @@
+$white: #FAFAFF;
+$blue: #212F3D;
+
+$sans: 'Poppins', sans-serif;
+
+body {
+  background: white;
+  font-family: $sans;
+  color: $blue;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+header {
+  background: $blue;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  h1 {
+  color: $white;
+  font-weight: 700;
+  font-size: 5em;
+  }
+  h3 {
+  color: $white;
+  margin: 10px 0;
+  }
+  nav {
+    display: none;
+  }
+}
+
+.highlight {
+  margin: 10px;
+  font-size: 1.2;
+  font-weight: 200;
+}
+
+.about-link {
+  font-weight: 700;
+  color: red;
+}
+
+.about, .work, .contact {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+    h1 {
+    color: $blue;
+    font-size: 6em;
+    font-weight: 700;
+    margin: 50px auto 50px auto;
+    padding: 15px 25px;
+    text-align: center;
+    background-color: white;
+    border: 5px solid $blue;
+    box-shadow: 10px 10px $blue;
+  }
+}
+
+.about {
+  .about-text {
+    padding: 50px;
+    background: #EAEDED;
+    text-align: left;
+    line-height: 1.5;
+  }
+}
+
+.work {
+  .work-item {
+    width: 90%;
+    margin: 0 auto;
+    img {
+      margin: 10px auto;
+      width: 100%;
+    }
+    a {
+      margin: 50px 0;
+      padding: 20px;
+      display: inline-block;
+      background: red;
+      color: $white;
+      font-weight: 700;
+      font-size: 1em;
+      text-decoration: none;
+    }
+  }
+}
+
+.contact {
+  .contact-text{
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  }
+}
+
+.social {
+  text-align: center;
+  margin: 20px auto;
+  .fa {
+    color: $blue;
+    padding: 5px; 
+    font-size: 7em;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+// tablets vertical
+@media screen and (min-width: 776px) and (max-width: 1024px) {
+
+  header {
+    text-align: left;
+    .name {
+      font-size: .7em;
+      display: inline-block;
+      h3 {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin: 10px 0;
+        padding: 5px 0 0 0;
+      }
+    }
+    nav {
+    display: inline-block;
+    margin: 60px 0 0 0;
+    float: right;
+    color: $white;
+      li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 1em;
+        a:hover {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .about-text {
+    font-size: 1.2em;
+  }
+
+  .contact-text {
+    font-size: 1.2em;
+  }
+  .social {
+    .fa {
+    font-size: 3em;
+    }
+  }
+}
+
+//desktops
+@media screen and (min-width: 1025px) {
+  
+  header {
+    text-align: left;
+    .name {
+      font-size: .7em;
+      display: inline-block;
+      h3 {
+        font-size: 1.5em;
+        font-weight: 200;
+        margin: 10px 0;
+        padding: 5px 0 0 0;
+      }
+    }
+    nav {
+    display: inline-block;
+    margin: 60px 0 0 0;
+    float: right;
+    color: $white;
+      li {
+        display: inline-block;
+        padding: 10px;
+        font-size: 1em;
+        a:hover {
+          color: red;
+        }
+      }
+    }
+
+  }
+
+  .about, .work, .contact {
+    width: 70%;
+  }
+
+  .about-text, .work-text, .contact-text {
+    font-size: 1.3em;
+  }
+
+  .social {
+    .fa {
+    font-size: 2.5em;
+    }
+ }
+}
