@@ -7,6 +7,11 @@ a {
   text-decoration: none;
   color: #FAFAFF; }
 
+h2 {
+  color: red;
+  font-weight: bold;
+  font-size: 18px; }
+
 header {
   background: #212F3D;
   margin: 20px;
